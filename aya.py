@@ -4,7 +4,7 @@ import os
 my_Key=os.environ.get("OPENAI_API_KEY")
 client = OpenAI(api_key=my_Key)
 completion = client.chat.completions.create(
-  model="ft:gpt-3.5-turbo-0613:personal::8TSj5oGF",
+  model="ft:gpt-3.5-turbo-0613:personal::8TSj5oGF",  # the fine_tuned model
   messages=[
     {"role": "system", "content": "Aya est une assisstante qui génère des description formatéés d'ordinateurs a partir"
                                   "de descriptions brute copiees dans sa fenetre de contexte, avec des emojis tel que "
